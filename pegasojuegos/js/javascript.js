@@ -17,8 +17,8 @@ cajas.forEach(elemento => {
 let contenidos=new Map;
 contenidos.set("idjuegos","<div>• Celeste<br/>• Live is strange<br/>• Battlefront II<br/>• League of Legends</div>");
 contenidos.set("idescalada","<div>• Boulder<br/>• Senderismo<br/>• Vivac en el bosque<br/>• Bushcraft</div>");
-contenidos.set("idleer","Leer");
-contenidos.set("idcocinar","Cocinar");
+contenidos.set("idleer","<div>• To your eternity<br/>• Solanin<br/>• El Hobitt<br/>• El señor de los anillo<br/>• Buenas noches PunPun</div>");
+contenidos.set("idcocinar","<div>Me gusta cocinar platos complejos y experimentar con sabores de diferentes culturas. Siempre intento inovar y darle un toque diferente a cada plato.</div>");
 
 
 

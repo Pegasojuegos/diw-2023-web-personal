@@ -33,7 +33,7 @@ body{
     width: $w;
     height: $h;
     position: relative;
-    background-color: #b87f59;
+    background-color: var(--color-6);
     border-radius: 100%;
     margin-top: 30px;
     border: 10px solid var(--color-3);
@@ -63,7 +63,7 @@ body{
 /* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
 .palocen{
     position: relative;
-    background-color: #b87f59;
+    background-color: var(--color-6);
     width: map-get($palos-tamanios,"ancho");
     height: map-get($palos-tamanios,"vertical_long");
     border-left:10px solid var(--color-3);
@@ -71,26 +71,26 @@ body{
 }
 .paloder{
     width: map-get($palos-tamanios,"horizontal_long");
-    background-color: #b87f59;
+    background-color: var(--color-6);
     height: map-get($palos-tamanios,"ancho");
     border-right: 10px solid var(--color-3);
     z-index: 2;
 }
 .paloizq{
     width: map-get($palos-tamanios,"horizontal_long");
-    background-color: #b87f59;
+    background-color: var(--color-6);
     height: map-get($palos-tamanios,"ancho");
     border-left: 10px solid var(--color-3);
     z-index: 2;
 }
 .nudoder{
-    background-color: #b87f59;
+    background-color: var(--color-6);
     width: map-get($palos-tamanios,"nudo_long");
     height: map-get($palos-tamanios,"ancho");
     border-left:10px solid var(--color-3);
 }
 .nudoizq{
-    background-color: #b87f59;
+    background-color: var(--color-6);
     width: map-get($palos-tamanios,"nudo_long");
     height: map-get($palos-tamanios,"ancho");
     border-right:10px solid var(--color-3);
