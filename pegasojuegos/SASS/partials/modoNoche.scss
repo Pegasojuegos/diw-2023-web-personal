@@ -32,4 +32,70 @@ $colores-oscuros : (
     }
 } 
 
+
+.menu-switch{
+  text-align: right;
+  font-size: 20px;
+  display: inline-block;
+  width: 5%;
+  color: var(--color-2);
+  margin: 0.5%;
+  margin-top: 15px;
+}
+
+/*------ Settings ------*/
+.container {
+  --color: var(--color-2);
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+}
+
+.container .moon {
+  position: absolute;
+  animation: keyframes-fill .5s;
+}
+
+.container .sun {
+  position: absolute;
+  display: none;
+  animation: keyframes-fill .5s;
+}
+
+/* ------ On check event ------ */
+.container input:checked ~ .moon {
+  display: none;
+}
+
+.container input:checked ~ .sun {
+  display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+  0% {
+    transform: rotate(-360deg) scale(0);
+    opacity: 0;
+  }
+
+  75% {
+    transform: rotate(25deg);
+  }
+}
+
 // sass --watch workspace/DIW-MHP/Pegaso.S.A/SASS/MiWeb.scss workspace/DIW-MHP/Pegaso.S.A/CSS/main.css
