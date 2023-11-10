@@ -1,9 +1,10 @@
 /* ╔════════════════•°♥ Fondos ♥°•═══════════════╗ */
 main{
     background-color: var(--color-1);
-    // width: 80%;    
+    width: 80%;    
     position: relative;
-    // left: 10%;
+    left: 10%;
+    font-family: fuenteContenido;
 }
 .fondo{
     height: 250px;
@@ -14,6 +15,20 @@ main{
 }
 body{
     margin: 0px;
+    background-color: var(--color-3);
+    position: relative;
+}
+.columna{
+    position: absolute;
+    font-size: 200px;
+    text-align: center;
+    width: 10%;
+    font-family: hojas;
+    color: var(--color-1);
+}
+.colder{
+    top: 100px;
+    left: 90%;
 }
 /* ═══════════════•°♥ Fondos palos ♥°•══════════════ */
 
@@ -145,7 +160,7 @@ body{
     background-color: var(--color-2);
     border-radius:25px;
     text-align: center;    
-    font-size: 20px;
+    font-size: $tamañoBaseFuente;
     color: var(--color-3);
     display: flex;
     align-items: center;
@@ -158,7 +173,7 @@ body{
     }
 
     b{
-        font-size: 25px;
+        font-size: calcTamaño($tamañoBaseFuente,5px);
     }
 }
 .datos{
@@ -167,7 +182,7 @@ body{
     width: 85%;
     height: 80%;
     text-align: left;
-    font-size: 18px;
+    font-size: calcTamaño($tamañoBaseFuente,-2px);
     line-height: 40px;
 }
 .columnas{

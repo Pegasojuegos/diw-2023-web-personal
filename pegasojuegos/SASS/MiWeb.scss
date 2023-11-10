@@ -15,10 +15,25 @@ body{
 }
 
 //Actiar modo debug
-$debug:false;
+$debug:true;
 
+$tamañoBaseFuente:20px;
 
-
+@font-face {
+    font-family: fuenteTitulo;
+    src: url(../Tipografias/DUNGRG__.TTF);
+}
+@font-face {
+  font-family: fuenteContenido;
+  src: url(../Tipografias/TravelingTypewriter.ttf);
+}
+@font-face {
+  font-family: hojas;
+  src: url(../Tipografias/Falline.ttf);
+}
+@function calcTamaño($tamañoBase,$modificacion){
+    @return $tamañoBase+$modificacion; 
+}
 
 @import "partials/menu";
 @import "partials/contenido";

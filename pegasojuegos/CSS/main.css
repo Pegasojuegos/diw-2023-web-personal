@@ -7,6 +7,18 @@ body {
   position: relative;
 }
 
+@font-face {
+  font-family: fuenteTitulo;
+  src: url(../Tipografias/DUNGRG__.TTF);
+}
+@font-face {
+  font-family: fuenteContenido;
+  src: url(../Tipografias/TravelingTypewriter.ttf);
+}
+@font-face {
+  font-family: hojas;
+  src: url(../Tipografias/Falline.ttf);
+}
 header {
   background-color: var(--color-5);
   height: 100px;
@@ -17,13 +29,14 @@ header {
 }
 
 .menu-element {
-  text-align: left;
-  font-size: 20px;
+  text-align: cent;
+  font-family: fuenteTitulo;
+  font-size: 35px;
   display: inline-block;
   width: 25%;
   background-color: var(--color-2);
   color: var(--color-3);
-  padding: 20px;
+  padding: 10px;
   margin: 0.5%;
   margin-top: 15px;
   border-radius: 80px 10px;
@@ -37,7 +50,10 @@ header {
 /* ╔════════════════•°♥ Fondos ♥°•═══════════════╗ */
 main {
   background-color: var(--color-1);
+  width: 80%;
   position: relative;
+  left: 10%;
+  font-family: fuenteContenido;
 }
 
 .fondo {
@@ -50,6 +66,22 @@ main {
 
 body {
   margin: 0px;
+  background-color: var(--color-3);
+  position: relative;
+}
+
+.columna {
+  position: absolute;
+  font-size: 200px;
+  text-align: center;
+  width: 10%;
+  font-family: hojas;
+  color: var(--color-1);
+}
+
+.colder {
+  top: 100px;
+  left: 90%;
 }
 
 /* ═══════════════•°♥ Fondos palos ♥°•══════════════ */
@@ -87,7 +119,7 @@ body {
   margin-top: 10px;
   border: 10px solid var(--color-3);
   z-index: 2;
-  background-image: url(../imagenes/foto.jpg);
+  background-image: url(../imagenes/modoDebug.png);
 }
 
 /* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
@@ -520,13 +552,13 @@ body {
 .circRelleno {
   border-radius: 100%;
   position: absolute;
-  background-color: var(--color-4);
+  background-color: rgb(233, 45, 45);
 }
 
 .paloRelleno {
   z-index: 3;
   position: relative;
-  background-color: var(--color-4);
+  background-color: rgb(233, 45, 45);
 }
 
 /* Animaciones Relleno */
@@ -602,67 +634,67 @@ body {
   }
 }
 #t1 {
-  animation: rellenarCirculo 1s linear 0s forwards;
+  animation: rellenarCirculo 0s linear 0s forwards;
 }
 
 #t2 {
-  animation: rellenarVertical 1s linear 1s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t3 {
-  animation: rellenarVertical 0.08s linear 2s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t4 {
-  animation: rellenarHorizontalDer 1.96s linear 2.08s forwards;
+  animation: rellenarHorizontalDer 0s linear 0s forwards;
 }
 
 #t5 {
-  animation: rellenarVertical 1s linear 4.04s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t6 {
-  animation: rellenarVertical 0.08s linear 5.04s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t7 {
-  animation: rellenarHorizontalIzq 1.96s linear 5.12s forwards;
+  animation: rellenarHorizontalIzq 0s linear 0s forwards;
 }
 
 #t8 {
-  animation: rellenarVertical 1s linear 7.08s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t9 {
-  animation: rellenarVertical 0.08s linear 8.08s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t10 {
-  animation: rellenarHorizontalDer 1.96s linear 8.16s forwards;
+  animation: rellenarHorizontalDer 0s linear 0s forwards;
 }
 
 #t11 {
-  animation: rellenarVertical 1s linear 10.12s forwards;
+  animation: rellenarVertical 0s linear 0s forwards;
 }
 
 #t12 {
-  animation: rellenarUnionCirculo 1s linear 11.12s forwards;
+  animation: rellenarUnionCirculo 0s linear 0s forwards;
 }
 
 #t13 {
-  animation: rellenarCirculo 0.5s linear 12.2s forwards;
+  animation: rellenarCirculo 0s linear 0s forwards;
 }
 
 #c1 {
-  animation: moverCartel 1s ease-in 4.04s forwards;
+  animation: moverCartel 0s ease-in 0s forwards;
 }
 
 #c2 {
-  animation: moverCartel 1s ease-in 7.08s forwards;
+  animation: moverCartel 0s ease-in 0s forwards;
 }
 
 #c3 {
-  animation: moverCartel 1s ease-in 10.12s forwards;
+  animation: moverCartel 0s ease-in 0s forwards;
 }
 
 /*Animacion botón*/
