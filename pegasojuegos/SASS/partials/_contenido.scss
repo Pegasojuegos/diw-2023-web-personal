@@ -26,9 +26,22 @@ body{
     font-family: hojas;
     color: var(--color-1);
 }
+
 .colder{
     top: 100px;
     left: 90%;
+}
+//Para móvil / media pantalla
+//Se eliminan las columnas de los bordes
+@media only screen and (max-width:1400px) {
+    .columna{
+        visibility: hidden;
+        width: 0%;
+    }
+    main{
+        width: 100%;
+        left: 0%;
+    }
 }
 /* ═══════════════•°♥ Fondos palos ♥°•══════════════ */
 

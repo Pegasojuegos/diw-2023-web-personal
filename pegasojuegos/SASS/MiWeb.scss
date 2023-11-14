@@ -15,7 +15,7 @@ body{
 }
 
 //Actiar modo debug
-$debug:true;
+$debug:false;
 
 $tamañoBaseFuente:20px;
 
@@ -40,6 +40,9 @@ $tamañoBaseFuente:20px;
 @import "partials/footer";
 @import "partials/modoNoche.scss";
 @import "partials/animaciones";
+
+// sass --watch workspace/diw-2023-web-personal/pegasojuegos/SASS/MiWeb.scss workspace/diw-2023-web-personal/pegasojuegos/CSS/main.css
+
 
 
 

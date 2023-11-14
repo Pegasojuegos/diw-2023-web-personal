@@ -1,4 +1,6 @@
 /* Rellenos */
+
+//Si el módo debug está activado cambia el color de relleno a rojo
 @mixin relleno($pos){
     position: $pos;
     @if $debug{
@@ -15,6 +17,7 @@
     z-index: 3;
     @include relleno(relative);
 }
+
 /* Animaciones Relleno */
 @keyframes rellenarVertical {
     from{ height: 0%;}
@@ -70,6 +73,7 @@
     to{top:10px}
 }
 
+//Si el debug está activado las animaciones se hacen instantáneamete
 @if $debug{
     #t1{animation: rellenarCirculo 0s linear 0s forwards;}
     #t2{animation: rellenarVertical 0s linear 0s forwards;}
