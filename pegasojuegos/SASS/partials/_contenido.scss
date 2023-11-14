@@ -173,7 +173,7 @@ body{
     background-color: var(--color-2);
     border-radius:25px;
     text-align: center;    
-    font-size: $tamañoBaseFuente;
+    font-size: calcTamaño($tamañoBaseFuente,-2px);
     color: var(--color-3);
     display: flex;
     align-items: center;
@@ -195,7 +195,6 @@ body{
     width: 85%;
     height: 80%;
     text-align: left;
-    font-size: calcTamaño($tamañoBaseFuente,-2px);
     line-height: 40px;
 }
 .columnas{

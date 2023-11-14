@@ -126,7 +126,7 @@
         text-align: left;
         width: 70%;
         height: 90%;
-
+        font-size: calcTama($tamañoBaseFuente,-2px);
     }
 
     &:hover{

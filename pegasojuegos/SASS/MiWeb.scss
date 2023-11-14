@@ -15,7 +15,7 @@ body{
 }
 
 //Actiar modo debug
-$debug:false;
+$debug:true;
 
 $tamañoBaseFuente:20px;
 
@@ -25,7 +25,7 @@ $tamañoBaseFuente:20px;
 }
 @font-face {
   font-family: fuenteContenido;
-  src: url(../Tipografias/TravelingTypewriter.ttf);
+  src: url(../Tipografias/chapaza/Chapaza.ttf);
 }
 @font-face {
   font-family: hojas;
