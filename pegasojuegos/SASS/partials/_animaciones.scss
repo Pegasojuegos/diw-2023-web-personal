@@ -1,5 +1,4 @@
-/* Rellenos */
-
+/* ╔════════════════════•°♥ Rellenos ♥°•═══════════════════╗ */
 //Si el módo debug está activado cambia el color de relleno a rojo
 @mixin relleno($pos){
     position: $pos;
@@ -23,7 +22,7 @@
     from{ height: 0%;}
     to{ height: 100%;}
 }
-
+/* ═════════════════════•°♥ Rellenos ♥°•════════════════════ */
 @keyframes rellenarHorizontalIzq{
     from{ 
         height:100%;
@@ -62,8 +61,9 @@
     from{ height: 0%;}
     to{ height: 105%;}
 }
+/* ╚═══════════════•°♥ Fin rellenos ♥°•═══════════════╝ */
 
-/* Animaciones carteles */
+/* ╔═════════════════════════════•°♥ Carteles ♥°•════════════════════════════╗ */
 @keyframes moverCartel {
     from{top: -220px;}
     60%{top:10px}
@@ -112,7 +112,8 @@
     #c3{animation: moverCartel 1s ease-in 10.12s forwards;}
 }
 
-/*Animacion botón*/
+/* ═════════════════════•°♥ Botones Aficciones ♥°•════════════════════ */
+//Cuando haces clic a una caja se le aplicara este estilo que hara una animación de crecimiento
 .botonSelec{    
     width: 90%;
     height: 80%;
@@ -136,9 +137,11 @@
         animation: botonGrande 0.2s ease-out 0s forwards;
     }
 }
+//Al pulsar una caja el resto de cajas desaparecerán
 .botonNoSelec{
     display: none;
 }
+//Expande una caja para ver su contenido
 @keyframes botonGrande{
     from{
         width: 50px;
@@ -150,8 +153,7 @@
         height: 80%;
     }
 }
-
-
+/* ═════════════════════•°♥ Cajistas efecto Hover ♥°•════════════════════ */
 @keyframes encimaBoton {
     from{
         width: 50px;
@@ -169,11 +171,12 @@
         width: 60px;
         height: 60px;
         background-size: 45px;
-        
+    }
     to{
         width: 50px;
         height: 50px;
         border-radius: 10px;
     }
-    }
 }
+
+/* ╚════════════════════════•°♥ Fin rellenos ♥°•════════════════════════╝ */

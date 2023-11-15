@@ -19,6 +19,7 @@ body {
   font-family: hojas;
   src: url(../Tipografias/Falline.ttf);
 }
+/* ╔════════════════════•°♥ Menu cabecera ♥°•═══════════════════╗ */
 header {
   background-color: var(--color-5);
   height: 110px;
@@ -53,6 +54,7 @@ header {
     width: 40%;
   }
 }
+/* ╚═══════════════•°♥ Menu cabecera ♥°•═══════════════╝ */
 /* ╔════════════════•°♥ Fondos ♥°•═══════════════╗ */
 main {
   background-color: var(--color-1);
@@ -258,6 +260,7 @@ body {
   font-size: 25px;
 }
 
+/* ══════════════════════════•°♥ Contenido ♥°•══════════════════════════ */
 .datos {
   position: relative;
   top: 15px;
@@ -406,7 +409,6 @@ body {
   border-radius: 100%;
 }
 
-/* ══════════════════════════•°♥ Contenido ♥°•══════════════════════════ */
 /* ══════════════════════════•°♥ Tapadores ♥°•══════════════════════════ */
 .tapador {
   position: absolute;
@@ -563,7 +565,7 @@ body {
     transform: rotate(25deg);
   }
 }
-/* Rellenos */
+/* ╔════════════════════•°♥ Rellenos ♥°•═══════════════════╗ */
 .circRelleno {
   border-radius: 100%;
   position: absolute;
@@ -585,6 +587,7 @@ body {
     height: 100%;
   }
 }
+/* ═════════════════════•°♥ Rellenos ♥°•════════════════════ */
 @keyframes rellenarHorizontalIzq {
   from {
     height: 100%;
@@ -627,7 +630,8 @@ body {
     height: 105%;
   }
 }
-/* Animaciones carteles */
+/* ╚═══════════════•°♥ Fin rellenos ♥°•═══════════════╝ */
+/* ╔═════════════════════════════•°♥ Carteles ♥°•════════════════════════════╗ */
 @keyframes moverCartel {
   from {
     top: -220px;
@@ -712,7 +716,7 @@ body {
   animation: moverCartel 1s ease-in 10.12s forwards;
 }
 
-/*Animacion botón*/
+/* ═════════════════════•°♥ Botones Aficciones ♥°•════════════════════ */
 .botonSelec {
   width: 90%;
   height: 80%;
@@ -750,6 +754,7 @@ body {
     height: 80%;
   }
 }
+/* ═════════════════════•°♥ Cajistas efecto Hover ♥°•════════════════════ */
 @keyframes encimaBoton {
   from {
     width: 50px;
@@ -767,12 +772,13 @@ body {
     width: 60px;
     height: 60px;
     background-size: 45px;
-    to {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-    }
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
   }
 }
+/* ╚════════════════════════•°♥ Fin rellenos ♥°•════════════════════════╝ */
 
 /*# sourceMappingURL=main.css.map */
