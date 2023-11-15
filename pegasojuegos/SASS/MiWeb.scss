@@ -15,8 +15,9 @@ body{
 }
 
 //Actiar modo debug
-$debug:true;
+$debug:false;
 
+//Tamañ por defecto a usar en las fuentes
 $tamañoBaseFuente:20px;
 
 @font-face {
@@ -31,6 +32,7 @@ $tamañoBaseFuente:20px;
   font-family: hojas;
   src: url(../Tipografias/Falline.ttf);
 }
+//Calcular el tamaño para que todas las fuentes vayan respecto al tamaño base sumando o restando cierta cantidad
 @function calcTamaño($tamañoBase,$modificacion){
     @return $tamañoBase+$modificacion; 
 }

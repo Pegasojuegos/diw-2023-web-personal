@@ -39,6 +39,7 @@
     color: var(--color-2);
 }
 
+//Para cada red social crea una caja con su imágen correspondiente
 $redes: instagram gmail;
 @each $red in $redes{
     #id#{$red} {

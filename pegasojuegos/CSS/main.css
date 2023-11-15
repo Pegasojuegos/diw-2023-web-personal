@@ -135,7 +135,7 @@ body {
   margin-top: 10px;
   border: 10px solid var(--color-3);
   z-index: 2;
-  background-image: url(../imagenes/modoDebug.png);
+  background-image: url(../imagenes/foto.jpg);
 }
 
 /* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
@@ -567,13 +567,13 @@ body {
 .circRelleno {
   border-radius: 100%;
   position: absolute;
-  background-color: rgb(233, 45, 45);
+  background-color: var(--color-4);
 }
 
 .paloRelleno {
   z-index: 3;
   position: relative;
-  background-color: rgb(233, 45, 45);
+  background-color: var(--color-4);
 }
 
 /* Animaciones Relleno */
@@ -649,67 +649,67 @@ body {
   }
 }
 #t1 {
-  animation: rellenarCirculo 0s linear 0s forwards;
+  animation: rellenarCirculo 1s linear 0s forwards;
 }
 
 #t2 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 1s linear 1s forwards;
 }
 
 #t3 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 0.08s linear 2s forwards;
 }
 
 #t4 {
-  animation: rellenarHorizontalDer 0s linear 0s forwards;
+  animation: rellenarHorizontalDer 1.96s linear 2.08s forwards;
 }
 
 #t5 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 1s linear 4.04s forwards;
 }
 
 #t6 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 0.08s linear 5.04s forwards;
 }
 
 #t7 {
-  animation: rellenarHorizontalIzq 0s linear 0s forwards;
+  animation: rellenarHorizontalIzq 1.96s linear 5.12s forwards;
 }
 
 #t8 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 1s linear 7.08s forwards;
 }
 
 #t9 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 0.08s linear 8.08s forwards;
 }
 
 #t10 {
-  animation: rellenarHorizontalDer 0s linear 0s forwards;
+  animation: rellenarHorizontalDer 1.96s linear 8.16s forwards;
 }
 
 #t11 {
-  animation: rellenarVertical 0s linear 0s forwards;
+  animation: rellenarVertical 1s linear 10.12s forwards;
 }
 
 #t12 {
-  animation: rellenarUnionCirculo 0s linear 0s forwards;
+  animation: rellenarUnionCirculo 1s linear 11.12s forwards;
 }
 
 #t13 {
-  animation: rellenarCirculo 0s linear 0s forwards;
+  animation: rellenarCirculo 0.5s linear 12.2s forwards;
 }
 
 #c1 {
-  animation: moverCartel 0s ease-in 0s forwards;
+  animation: moverCartel 1s ease-in 4.04s forwards;
 }
 
 #c2 {
-  animation: moverCartel 0s ease-in 0s forwards;
+  animation: moverCartel 1s ease-in 7.08s forwards;
 }
 
 #c3 {
-  animation: moverCartel 0s ease-in 0s forwards;
+  animation: moverCartel 1s ease-in 10.12s forwards;
 }
 
 /*Animacion botón*/
