@@ -1,0 +1,467 @@
+/* ╔════════════════•°♥ Fondos ♥°•═══════════════╗ */
+html{
+    box-sizing: border-box;
+}
+header{
+    background-color: #CC704B;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    text-align: center;
+}
+.menu-element{
+    text-align: left;
+    font-size: 20px;
+    display: inline-block;
+    width: 25%;
+    background-color: #E8C07D;
+    color: #614124;
+    padding: 20px;
+    margin: 0.5%;
+    margin-top: 15px;
+    border-radius: 80px 10px;
+    border: 3px solid #614124;
+}
+.menu-element:hover{
+    background-color: #9FC088;
+    color: #FFEBC9;
+    box-shadow: 5px solid black;
+}
+main{
+    background-color: #FFEBC9;
+    width: 80%;    
+    position: relative;
+    left: 10%;
+}
+body{
+    background-color: #705545;
+    position: relative;
+}
+.fondo{
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+body{
+    margin: 0px;
+}
+/* ═══════════════•°♥ Fondos palos ♥°•══════════════ */
+
+.grande{
+    position: relative;
+    /* background-color: bluevkiolet; */
+} 
+.pequeño{
+    /* background-color: aquamarine; */
+    z-index: 2;
+    height: 20px;
+}
+/* ╚═══════════════•°♥ Fin Fondos ♥°•═══════════════╝ */
+
+/* ╔══════════════════════•°♥ Elementos ♥°•══════════════════════╗ */
+
+/* ══════════════════════•°♥ Circulo Foto ♥°•═════════════════════ */
+#idcirculogran{
+    position: relative;
+    bottom: -11px;
+    background-color: #b87f59;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 30px;
+    border: 10px solid #614124;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#idfoto{
+    background-image: url(imagenes/foto.jpg);
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    margin-top: 10px;
+    border: 10px solid #614124;
+    z-index: 2;
+}
+/* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
+.palocen{
+    position: relative;
+    background-color: #b87f59;
+    width: 20px;
+    height: 250px;
+    border-left:10px solid #614124;
+    border-right:10px solid #614124;
+}
+.paloder{
+    width: 490px;
+    background-color: #b87f59;
+    height: 20px;
+    border-right: 10px solid #614124;
+    z-index: 2;
+}
+.paloizq{
+    width: 490px;
+    background-color: #b87f59;
+    height: 20px;
+    border-left: 10px solid #614124;
+    z-index: 2;
+}
+.nudoder{
+    background-color: #b87f59;
+    width: 30px;
+    height: 20px;
+    border-left:10px solid #614124;
+}
+.nudoizq{
+    background-color: #b87f59;
+    width: 30px;
+    height: 20px;
+    border-right:10px solid #614124;
+}
+
+/* ════════════════•°♥ Huecos y bordes para palos ♥°•═══════════════ */
+.vacio{
+    width: 500px;
+    height: 20px;
+}
+.border{
+    width: 500px;
+    height: 10px;
+    background-color: #614124;
+    z-index: 2;
+}
+.upr{
+    border-bottom-right-radius: 20px;
+}
+.upl{
+    border-bottom-left-radius: 20px;
+}
+.downr{
+    position: relative;
+    top: 240px;
+    border-top-right-radius: 20px;
+}
+.downl{
+    position: relative;
+    top: 240px;
+    border-top-left-radius: 20px;
+}
+/* ══════════════════════════•°♥ Circulo final ♥°•══════════════════════════ */
+#idcirculopeq{
+    position: relative;
+    top: -41px;    
+    background-color: #b87f59;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 30px;
+    border: 10px solid #614124;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+/* ╚══════════════════════════•°♥ Fin Elementos ♥°•══════════════════════════╝ */
+
+/* ╔══════════════════════•°♥ Carteles ♥°•══════════════════════╗ */
+.contCartel{
+    position: absolute;
+    top: -220px;
+    width: 2400%;
+    height: 230px;
+}
+.cartel{
+    width: 98%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    background-color: #E8C07D;
+    border-radius:25px;
+    text-align: center;    
+    font-size: 20px;
+    color: #614124;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cartel span{
+    position: relative;
+    top: 10px;
+    text-decoration: underline;
+}
+.cartel b{
+    font-size: 25px;
+}
+.datos{
+    position: relative;
+    top: 15px;
+    width: 85%;
+    height: 80%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+}
+.columnas{
+    column-count: 2;
+    line-height: 30px;
+}
+.columnas div{
+    width: 100%;
+    height: 100%;
+}
+.columnas span{
+    top: 0;
+}
+.contCajitas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.cajita{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #614124;
+    border-radius: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.afic{
+    background-color: #9FC088;
+}
+#idjuegos{
+    background-image: url(imagenes/palanca-de-mando.png);
+}
+#idescalada{
+    background-image: url(imagenes/alpinismo.png);      
+}
+#idleer{
+    background-image: url(imagenes/libro.png);
+}
+#idcocinar{
+    background-image: url(imagenes/frito.png);
+}
+.cajita:hover{
+    animation: encimaBoton 0.1s linear 0s forwards;
+}
+.cajita:not(:hover){
+    animation: noEncimaBoton 0.1s linear 0s forwards;
+}
+.carder{
+    left: 2%;
+}
+.carizq{
+    right: 2%;
+}
+.cuerda{
+    position: absolute;
+    width: 5px;
+    height: 45px;
+    background-color: #614124;
+    z-index: 1;
+}
+.cizq{
+    left: 20%;
+}
+.cder{
+    left: 80%;
+}
+.clavo{
+    width: 11px;
+    height: 11px;
+    background-color: #614124;
+    position: absolute;
+    top: 38px;
+    left: -3px;
+    border-radius: 100%;
+}
+/* ══════════════════════════•°♥ Contenido ♥°•══════════════════════════ */
+
+/* ══════════════════════════•°♥ Tapadores ♥°•══════════════════════════ */
+.tapador{
+    position: absolute;
+    top: 10px;
+    background-color: #FFEBC9;
+    width: 2400%;
+    height: 230px;
+    z-index: 2;
+}
+.der{
+    left: 30px;
+}
+.izq{
+    right:30px;
+}
+/* ╚══════════════════════════•°♥ Fin carteles ♥°•══════════════════════════╝ */
+
+/* ╔════════════════•°♥ Pies ♥°•═══════════════╗ */
+#idredes{
+    width: 100%;
+    height: 150px;
+    background-color: #CC704B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.redes{
+    margin: 10px;
+    background-color: #E8C07D;
+}
+#idinstagram{
+    background-image: url(imagenes/instagram.png);
+}
+#idcorreo{
+    background-image: url(imagenes/gmail.png);
+}
+#idpie{
+    width: 100%;
+    height: 100px;
+    background-color: #614124;
+    text-align: center;
+}
+#idcontLogo{
+    display: inline-block;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+#idlogo{
+    display: inline-block;
+    background-size: cover;
+    background-image: url(imagenes/logo.png);
+    width: 60px;
+    height: 60px;
+}
+#idnombreLogo{
+    position: relative;
+    bottom: 15px;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    color: #E8C07D;
+}
+/* ╚═══════════•°♥ Fin pies ♥°•═══════════╝ */
+
+/* Rellenos */*
+.circRelleno{
+    position: absolute;
+    background-color: #9FC088;
+    border-radius: 100%;
+}
+.paloRelleno{
+    position: relative;
+    background-color: #9FC088;
+    z-index: 3;
+}
+/* Animaciones Relleno */
+@keyframes rellenarVertical {
+    from{ height: 0%;}
+    to{ height: 100%;}
+}
+
+@keyframes rellenarHorizontalIzq{
+    from{ 
+        height:100%;
+        width: 0%;
+        left: 100%;
+    }
+    to{ 
+        height:100%;
+        width: 100%;
+        left:0%
+    }
+}
+@keyframes rellenarHorizontalDer{
+   from{
+    height:100%;
+    width: 0%;
+}
+   to{
+    height:100%;
+    width: 100%;
+}
+}
+@keyframes rellenarCirculo {
+    from{
+        top: 25%;
+        width: 50%;
+        height: 50%;
+    }
+    to{
+        top: 0%;
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes rellenarUnionCirculo {
+    from{ height: 0%;}
+    to{ height: 105%;}
+}
+#t1{animation: rellenarCirculo 1s linear 0s forwards;}
+#t2{animation: rellenarVertical 1s linear 1s forwards;}
+#t3{animation: rellenarVertical 0.08s linear 2s forwards;}
+#t4{animation: rellenarHorizontalDer 1.96s linear 2.08s forwards;}
+#t5{animation: rellenarVertical 1s linear 4.04s forwards;}
+#t6{animation: rellenarVertical 0.08s linear 5.04s forwards;}
+#t7{animation: rellenarHorizontalIzq 1.96s linear 5.12s forwards;}
+#t8{animation: rellenarVertical 1s linear 7.08s forwards;}
+#t9{animation: rellenarVertical 0.08s linear 8.08s forwards;}
+#t10{animation: rellenarHorizontalDer 1.96s linear 8.16s forwards;}
+#t11{animation: rellenarVertical 1s linear 10.12s forwards;}
+#t12{animation: rellenarUnionCirculo 1s linear 11.12s forwards;}
+#t13{animation: rellenarCirculo 0.5s linear 12.2s forwards;}
+
+/* Animaciones carteles */
+ @keyframes moverCartel {
+    from{top: -220px;}
+    60%{top:10px}
+    70%{top:-10px}
+    80%{top:10px;}
+    90%{top:0px;}
+    to{top:10px}
+}
+
+#c1{animation: moverCartel 1s ease-in 4.04s forwards;} 
+#c2{animation: moverCartel 1s ease-in 7.08s forwards;} 
+#c3{animation: moverCartel 1s ease-in 10.12s forwards;}  
+/*
+#c1{animation: moverCartel 0s ease-in 0s forwards;} 
+#c2{animation: moverCartel 0s ease-in 0s forwards;} 
+#c3{animation: moverCartel 0s ease-in 0s forwards;} 
+*/
+/*Animacion botón*/
+@keyframes encimaBoton {
+    from{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    to{
+        width: 60px;
+        height: 60px;
+        background-size: 45px;  
+    }
+}
+@keyframes noEncimaBoton {
+    from{
+        width: 60px;
+        height: 60px;
+        background-size: 45px;
+        
+    to{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    }
+}

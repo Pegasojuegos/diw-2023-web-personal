@@ -1,0 +1,302 @@
+/* ╔════════════════•°♥ Fondos ♥°•═══════════════╗ */
+main{
+    background-color: var(--color-1);
+    width: 80%;    
+    position: relative;
+    left: 10%;
+    font-family: fuenteContenido;
+}
+.fondo{
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+body{
+    margin: 0px;
+    background-color: var(--color-3);
+    position: relative;
+}
+.columna{
+    position: absolute;
+    font-size: 200px;
+    text-align: center;
+    width: 10%;
+    font-family: hojas;
+    color: var(--color-1);
+}
+
+.colder{
+    top: 100px;
+    left: 90%;
+}
+//Para móvil / media pantalla
+//Se eliminan las columnas de los bordes
+@media only screen and (max-width:1400px) {
+    .columna{
+        visibility: hidden;
+        width: 0%;
+    }
+    main{
+        width: 100%;
+        left: 0%;
+    }
+}
+/* ═══════════════•°♥ Fondos palos ♥°•══════════════ */
+
+.grande{
+    position: relative;
+} 
+.pequeño{
+    z-index: 2;
+    height: 20px;
+}
+/* ╚═══════════════•°♥ Fin Fondos ♥°•═══════════════╝ */
+
+/* ╔══════════════════════•°♥ Elementos ♥°•══════════════════════╗ */
+
+/* ══════════════════════•°♥ Circulo Foto ♥°•═════════════════════ */
+//Estilos conjuntos para los círtculos en función de un ancho y un alto
+@mixin circulo($w,$h){
+    width: $w;
+    height: $h;
+    position: relative;
+    background-color: var(--color-6);
+    border-radius: 100%;
+    margin-top: 30px;
+    border: 10px solid var(--color-3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}  
+#idcirculogran{
+    bottom: -11px;
+    @include circulo(200px,200px);
+}
+#idfoto{
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    margin-top: 10px;
+    border: 10px solid var(--color-3);
+    z-index: 2;
+
+    //Si se activa el modo debug cambia la imágen
+    @if $debug==false{
+        background-image: url(../imagenes/foto.jpg);
+    }@else{
+        background-image: url(../imagenes/modoDebug.png);
+    }
+}
+/* ══════════════════════════•°♥ Palos ♥°•══════════════════════════ */
+.palocen{
+    position: relative;
+    background-color: var(--color-6);
+    width: map-get($palos-tamanios,"ancho");
+    height: map-get($palos-tamanios,"vertical_long");
+    border-left:10px solid var(--color-3);
+    border-right:10px solid var(--color-3);
+}
+.paloder{
+    width: map-get($palos-tamanios,"horizontal_long");
+    background-color: var(--color-6);
+    height: map-get($palos-tamanios,"ancho");
+    border-right: 10px solid var(--color-3);
+    z-index: 2;
+}
+.paloizq{
+    width: map-get($palos-tamanios,"horizontal_long");
+    background-color: var(--color-6);
+    height: map-get($palos-tamanios,"ancho");
+    border-left: 10px solid var(--color-3);
+    z-index: 2;
+}
+.nudoder{
+    background-color: var(--color-6);
+    width: map-get($palos-tamanios,"nudo_long");
+    height: map-get($palos-tamanios,"ancho");
+    border-left:10px solid var(--color-3);
+}
+.nudoizq{
+    background-color: var(--color-6);
+    width: map-get($palos-tamanios,"nudo_long");
+    height: map-get($palos-tamanios,"ancho");
+    border-right:10px solid var(--color-3);
+}
+
+/* ════════════════•°♥ Huecos y bordes para palos ♥°•═══════════════ */
+//para la colocación de cada segmento del "arbol" conjunto vacio-tronco-rama
+.vacio{
+    width: 500px;
+    height: 20px;
+}
+
+//Simulación de bordes para las ramas, ya que si tubiesen su propio borde se descuadran con la unión al nudo
+//por ello estas cajas serán del tamaño y color del resto de bordes y se colocaran de acuerdo a su nombre
+//up down r->right l->left
+.border{
+    width: 500px;
+    height: 10px;
+    background-color: var(--color-3);
+    z-index: 2;
+}
+.upr{
+    border-bottom-right-radius: 20px;
+}
+.upl{
+    border-bottom-left-radius: 20px;
+}
+.downr{
+    position: relative;
+    top: 240px;
+    border-top-right-radius: 20px;
+}
+.downl{
+    position: relative;
+    top: 240px;
+    border-top-left-radius: 20px;
+}
+/* ══════════════════════════•°♥ Circulo final ♥°•══════════════════════════ */
+#idcirculopeq{
+    top: -41px;    
+    @include circulo(50px,50px);
+}
+/* ╚══════════════════════════•°♥ Fin Elementos ♥°•══════════════════════════╝ */
+
+/* ╔══════════════════════•°♥ Carteles ♥°•══════════════════════╗ */
+.contCartel{
+    position: absolute;
+    top: -220px;
+    width: 2400%;
+    height: 230px;
+}
+.cartel{
+    width: 98%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    background-color: var(--color-2);
+    border-radius:25px;
+    text-align: center;    
+    font-size: calcTamaño($tamañoBaseFuente,-2px);
+    color: var(--color-3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+        position: relative;
+        top: 10px;
+        text-decoration: underline;
+    }
+
+    b{
+        font-size: calcTamaño($tamañoBaseFuente,5px);
+    }
+}
+/* ══════════════════════════•°♥ Contenido ♥°•══════════════════════════ */
+.datos{
+    position: relative;
+    top: 15px;
+    width: 85%;
+    height: 80%;
+    text-align: left;
+    line-height: 40px;
+}
+.columnas{
+    column-count: 2;
+    line-height: 30px;
+
+    div{
+        width: 100%;
+        height: 100%;
+    }
+
+    span{
+        top: 0;
+    }
+}
+.contCajitas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+//Para cada caja de afficiones aplico sus estilos, junto a las animaciones
+//La imágen de la caja irá en función de su nombre
+$cajas:juegos escalada leer cocinar;
+@each $caja in $cajas{
+    .cajita{
+        width: 50px;
+        height: 50px;
+        border: 3px solid var(--color-3);
+        border-radius: 10px;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        &:hover{
+            animation: encimaBoton 0.1s linear 0s forwards;
+        }
+        &:not(:hover){
+            animation: noEncimaBoton 0.1s linear 0s forwards;
+        }
+    }
+    #id#{$caja}{
+        background-image: url("../imagenes/#{$caja}.png");
+    }
+}
+.afic{
+    background-color: var(--color-4);
+}
+.carder{
+    left: 2%;
+}
+.carizq{
+    right: 2%;
+}
+//Cajitas que simulan la cuerda y los clavos de la caja
+.cuerda{
+    position: absolute;
+    width: 5px;
+    height: 45px;
+    background-color: var(--color-3);
+    z-index: 1;
+}
+.cizq{
+    left: 20%;
+}
+.cder{
+    left: 80%;
+}
+.clavo{
+    width: 11px;
+    height: 11px;
+    background-color: var(--color-3);
+    position: absolute;
+    top: 38px;
+    left: -3px;
+    border-radius: 100%;
+}
+/* ══════════════════════════•°♥ Tapadores ♥°•══════════════════════════ */
+//Cajas del color del fondo, que taparan los carteles antes de que caigan con la animación
+.tapador{
+    position: absolute;
+    top: 10px;
+    background-color: var(--color-1);
+    width: 2400%;
+    height: 230px;
+    z-index: 2;
+}
+.der{
+    left: 30px;
+}
+.izq{
+    right:30px;
+}
+/* ╚══════════════════════════•°♥ Fin carteles ♥°•══════════════════════════╝ */

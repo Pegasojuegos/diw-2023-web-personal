@@ -1,0 +1,102 @@
+$color-1-claro: #FFEBC9;
+$color-2-claro: #E8C07D;
+$color-3-claro: #614124;
+$color-4-claro: #9FC088;
+$color-5-claro: #CC704B;
+$color-6-claro: #b87f59;
+
+$colores-oscuros : (
+  #D1B282,
+  #A47836,
+  #3A1F0C,
+  #728E55,
+  #8D4319,
+  #724b2b
+);
+:root{
+    .tema-claro{
+    --color-1:  #{$color-1-claro};
+    --color-2:  #{$color-2-claro};
+    --color-3:  #{$color-3-claro};
+    --color-4:  #{$color-4-claro};
+    --color-5:  #{$color-5-claro};
+    --color-6:  #{$color-6-claro};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+      --color-4:  #{nth($colores-oscuros,4)};
+      --color-5:  #{nth($colores-oscuros,5)};
+      --color-6:  #{nth($colores-oscuros,6)};
+    }
+} 
+
+
+//Botón modo noche
+.menu-switch{
+  text-align: right;
+  font-size: 20px;
+  display: inline-block;
+  width: 5%;
+  color: var(--color-2);
+  margin: 0.5%;
+  margin-top: 15px;
+}
+
+/*------ Settings ------*/
+.container {
+  --color: var(--color-2);
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+}
+
+.container .moon {
+  position: absolute;
+  animation: keyframes-fill .5s;
+}
+
+.container .sun {
+  position: absolute;
+  display: none;
+  animation: keyframes-fill .5s;
+}
+
+/* ------ On check event ------ */
+.container input:checked ~ .moon {
+  display: none;
+}
+
+.container input:checked ~ .sun {
+  display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+  0% {
+    transform: rotate(-360deg) scale(0);
+    opacity: 0;
+  }
+
+  75% {
+    transform: rotate(25deg);
+  }
+}
+
+

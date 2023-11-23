@@ -1,0 +1,182 @@
+/* ╔════════════════════•°♥ Rellenos ♥°•═══════════════════╗ */
+//Si el módo debug está activado cambia el color de relleno a rojo
+@mixin relleno($pos){
+    position: $pos;
+    @if $debug{
+        background-color: rgb(233, 45, 45);
+    }@else{
+        background-color: var(--color-4);
+    }
+}
+.circRelleno{
+    border-radius: 100%;
+    @include relleno(absolute);
+}
+.paloRelleno{
+    z-index: 3;
+    @include relleno(relative);
+}
+
+/* Animaciones Relleno */
+@keyframes rellenarVertical {
+    from{ height: 0%;}
+    to{ height: 100%;}
+}
+/* ═════════════════════•°♥ Rellenos ♥°•════════════════════ */
+@keyframes rellenarHorizontalIzq{
+    from{ 
+        height:100%;
+        width: 0%;
+        left: 100%;
+    }
+    to{ 
+        height:100%;
+        width: 100%;
+        left:0%
+    }
+}
+@keyframes rellenarHorizontalDer{
+   from{
+    height:100%;
+    width: 0%;
+}
+   to{
+    height:100%;
+    width: 100%;
+}
+}
+@keyframes rellenarCirculo {
+    from{
+        top: 25%;
+        width: 50%;
+        height: 50%;
+    }
+    to{
+        top: 0%;
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes rellenarUnionCirculo {
+    from{ height: 0%;}
+    to{ height: 105%;}
+}
+/* ╚═══════════════•°♥ Fin rellenos ♥°•═══════════════╝ */
+
+/* ╔═════════════════════════════•°♥ Carteles ♥°•════════════════════════════╗ */
+@keyframes moverCartel {
+    from{top: -220px;}
+    60%{top:10px}
+    70%{top:-10px}
+    80%{top:10px;}
+    90%{top:0px;}
+    to{top:10px}
+}
+
+//Si el debug está activado las animaciones se hacen instantáneamete
+@if $debug{
+    #t1{animation: rellenarCirculo 0s linear 0s forwards;}
+    #t2{animation: rellenarVertical 0s linear 0s forwards;}
+    #t3{animation: rellenarVertical 0s linear 0s forwards;}
+    #t4{animation: rellenarHorizontalDer 0s linear 0s forwards;}
+    #t5{animation: rellenarVertical 0s linear 0s forwards;}
+    #t6{animation: rellenarVertical 0s linear 0s forwards;}
+    #t7{animation: rellenarHorizontalIzq 0s linear 0s forwards;}
+    #t8{animation: rellenarVertical 0s linear 0s forwards;}
+    #t9{animation: rellenarVertical 0s linear 0s forwards;}
+    #t10{animation: rellenarHorizontalDer 0s linear 0s forwards;}
+    #t11{animation: rellenarVertical 0s linear 0s forwards;}
+    #t12{animation: rellenarUnionCirculo 0s linear 0s forwards;}
+    #t13{animation: rellenarCirculo 0s linear 0s forwards;}
+    
+    #c1{animation: moverCartel 0s ease-in 0s forwards;} 
+    #c2{animation: moverCartel 0s ease-in 0s forwards;} 
+    #c3{animation: moverCartel 0s ease-in 0s forwards;} 
+}@else{
+    #t1{animation: rellenarCirculo 1s linear 0s forwards;}
+    #t2{animation: rellenarVertical 1s linear 1s forwards;}
+    #t3{animation: rellenarVertical 0.08s linear 2s forwards;}
+    #t4{animation: rellenarHorizontalDer 1.96s linear 2.08s forwards;}
+    #t5{animation: rellenarVertical 1s linear 4.04s forwards;}
+    #t6{animation: rellenarVertical 0.08s linear 5.04s forwards;}
+    #t7{animation: rellenarHorizontalIzq 1.96s linear 5.12s forwards;}
+    #t8{animation: rellenarVertical 1s linear 7.08s forwards;}
+    #t9{animation: rellenarVertical 0.08s linear 8.08s forwards;}
+    #t10{animation: rellenarHorizontalDer 1.96s linear 8.16s forwards;}
+    #t11{animation: rellenarVertical 1s linear 10.12s forwards;}
+    #t12{animation: rellenarUnionCirculo 1s linear 11.12s forwards;}
+    #t13{animation: rellenarCirculo 0.5s linear 12.2s forwards;}
+    
+    #c1{animation: moverCartel 1s ease-in 4.04s forwards;} 
+    #c2{animation: moverCartel 1s ease-in 7.08s forwards;} 
+    #c3{animation: moverCartel 1s ease-in 10.12s forwards;}
+}
+
+/* ═════════════════════•°♥ Botones Aficciones ♥°•════════════════════ */
+//Cuando haces clic a una caja se le aplicara este estilo que hara una animación de crecimiento
+.botonSelec{    
+    width: 90%;
+    height: 80%;
+    background-position: 10px;
+    animation: botonGrande 0.2s ease-out 0s forwards;
+
+    div{
+        position: relative;
+        left: 17%;
+        top: 10%;
+        text-align: left;
+        width: 70%;
+        height: 90%;
+        font-size: calcTama($tamañoBaseFuente,-2px);
+    }
+
+    &:hover{
+        animation: botonGrande 0.2s ease-out 0s forwards;
+    }
+    &:not(:hover){
+        animation: botonGrande 0.2s ease-out 0s forwards;
+    }
+}
+//Al pulsar una caja el resto de cajas desaparecerán
+.botonNoSelec{
+    display: none;
+}
+//Expande una caja para ver su contenido
+@keyframes botonGrande{
+    from{
+        width: 50px;
+        height: 50px;
+        font-size: 0px;
+    }
+    to{
+        width: 90%;
+        height: 80%;
+    }
+}
+/* ═════════════════════•°♥ Cajistas efecto Hover ♥°•════════════════════ */
+@keyframes encimaBoton {
+    from{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    to{
+        width: 60px;
+        height: 60px;
+        background-size: 45px;  
+    }
+}
+@keyframes noEncimaBoton {
+    from{
+        width: 60px;
+        height: 60px;
+        background-size: 45px;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+}
+
+/* ╚════════════════════════•°♥ Fin rellenos ♥°•════════════════════════╝ */

@@ -1,0 +1,52 @@
+$palos-tamanios:(
+  'horizontal_long':490px,
+  'vertical_long':250px,
+  'nudo_long':30px,
+  'ancho':20px
+);
+
+
+html{
+    box-sizing: border-box;
+}
+body{
+    // background-color: #705545;
+    position: relative;
+}
+
+//Activar modo debug
+$debug:false;
+
+//Tamaño por defecto a usar en las fuentes
+$tamañoBaseFuente:20px;
+
+@font-face {
+    font-family: fuenteTitulo;
+    src: url(../Tipografias/DUNGRG__.TTF);
+}
+@font-face {
+  font-family: fuenteContenido;
+  src: url(../Tipografias/chapaza/Chapaza.ttf);
+}
+@font-face {
+  font-family: hojas;
+  src: url(../Tipografias/Falline.ttf);
+}
+//Calcular el tamaño para que todas las fuentes vayan respecto al tamaño base sumando o restando cierta cantidad
+@function calcTamaño($tamañoBase,$modificacion){
+    @return $tamañoBase+$modificacion; 
+}
+
+@import "partials/menu";
+@import "partials/contenido";
+@import "partials/footer";
+@import "partials/modoNoche.scss";
+@import "partials/animaciones";
+
+// sass --watch workspace/diw-2023-web-personal/pegasojuegos/SASS/MiWeb.scss workspace/diw-2023-web-personal/pegasojuegos/CSS/main.css
+
+
+
+
+
+
